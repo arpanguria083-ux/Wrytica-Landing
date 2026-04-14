@@ -1588,6 +1588,9 @@
             </p>
           </div>`;
 
+        // Show modal (make it visible)
+        document.getElementById('downloadModal').classList.add('open');
+
         // Auto-trigger download (with fallback for browsers that block auto-click)
         if (isWin && dlUrl) {
           setTimeout(() => {
